@@ -98,3 +98,11 @@ button img {
   font-size: 2em;
   margin: 0;
 }
+@media screen and (max-width: 430px) {
+  .centeredBox {
+    width: 100%;
+  }
+  .outPutField h1 {
+    font-size: 2em;
+  }
+}
