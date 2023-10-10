@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.centeredBox {
+  text-align: center;
+  border: 1px solid rgb(97, 96, 96);
+  border-radius: 10% 10% 40% 10%;
+  width: 50%;
+  box-shadow: 10px 10px 10px rgb(97, 96, 96);
+  background-color: #fff;
+}
+
+.inputBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+button {
+  align-items: end;
+}
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+  font-family: "Italic";
+  font-size: small;
+  color: grey;
+}
+
+input {
+  padding: 5px;
+  width: 100px;
+  box-sizing: border-box;
+  font-family: "BoldItalic";
+  font-size: 30px;
+}
+::placeholder {
+  color: #c4c4c4;
+}
+button {
+  background-color: #864cff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 50px;
+  bottom: -30px;
+  border: none;
+  box-shadow: black;
+  box-shadow: 5px 3px 3px black;
+}
+
+button img {
+  width: 30px;
+}
+
+.buttonContainer {
+  position: relative;
+  border-bottom: 2px solid #c4c3c3;
+}
+
+@font-face {
+  font-family: "BoldItalic"; /* Name you'll use to refer to this font */
+  src: url("/assets/fonts/Poppins-BoldItalic.ttf") format("truetype"); /* Path to your font file */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Italic"; /* Name you'll use to refer to this font */
+  src: url("/assets/fonts/Poppins-Italic.ttf") format("truetype"); /* Path to your font file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.numberField {
+  font-size: 4em;
+  font-family: "BoldItalic";
+  margin: 0;
+}
+.numberOutput {
+  font-family: "BoldItalic";
+  color: #864cff;
+  font-size: 2em;
+  margin: 0;
+}

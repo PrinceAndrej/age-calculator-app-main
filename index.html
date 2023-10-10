@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="centeredBox">
+      <div class="inputBox">
+        <div class="inputGroup">
+          <label for="day">Day</label>
+          <input
+            type="number"
+            style="border: solid black"
+            id="day"
+            min="1"
+            max="31"
+            placeholder="DD"
+          />
+        </div>
+        <div class="inputGroup">
+          <label for="month">Month</label>
+          <input
+            type="number"
+            style="border: solid black"
+            id="month"
+            min="1"
+            max="12"
+            placeholder="MM"
+          />
+        </div>
+
+        <div class="inputGroup">
+          <label for="year">Year</label>
+          <input
+            type="number"
+            id="year"
+            min="1"
+            max="2030"
+            placeholder="YYYY"
+            style="width: 115px"
+          />
+        </div>
+      </div>
+      <p id="noTextValue" style="color: black"></p>
+      <div class="buttonContainer">
+        <div class="line"></div>
+        <button
+          id="button"
+          style="box-shadow: 5px 3px 3px black"
+          onclick="calculateDifference()"
+        >
+          <img src="/assets/images/icon-arrow.svg" alt="Image" />
+        </button>
+      </div>
+
+      <div id="OutputField" class="outPutField">
+        <h1 class="numberField">
+          <span id="yearsOutput" class="numberOutput">--</span> Years
+        </h1>
+        <h1 class="numberField">
+          <span id="monthsOutput" class="numberOutput">--</span> Months
+        </h1>
+        <h1 class="numberField">
+          <span id="daysOutput" class="numberOutput">--</span> Days
+        </h1>
+      </div>
+    </div>
+  </body>
+</html>
